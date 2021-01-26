@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <main>
+        <section>
+            <form action="methodName" method="POST">
+                <div class="rating">
+                    
+                    <label>How would you rate our service (Scale 1-10)</label>
+                    <input type="range" name="scale" id="range">
+                </div>
+                
+                <div class="recommendation">
+                    <label>Would recommend us to a friend or family?</label>
+                    
+                    <input type="radio" name="recommend" value="Yes"><label>Yes</label>
+                    <input type="radio" name="recommend" value="No"><label>No</label>
+                </div>
+
+                <div class="additional-feedback">
+                    <label>Additonal Comments</label><br>
+                    <input type="textbox" name="comments" maxlength="8" size="100">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
